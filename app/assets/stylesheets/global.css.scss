@@ -9,10 +9,26 @@ $backgroundColor: #492A2D;
 body {
 	background-color: $backgroundColor;
 	color: $fontColor;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Muli', Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+p {
+	margin: 0 auto;
+	width: 60%;
 }
 
 a {
 	color: $fontColor;
 }
+
+
 
