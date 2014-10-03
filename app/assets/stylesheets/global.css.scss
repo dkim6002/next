@@ -1,16 +1,33 @@
 $fontColor: #FFF;
 $backgroundColor: #492A2D;
+$borderColor: #007F7F;
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 }
 
+html{
+	height: 100%;
+}
+
+.wrapper{
+	background-color: rgba(0,0,0,0.5);
+	min-height: 90%;
+	margin: 4% 4% -50px;
+}
+
+.footer, .push{
+	height: 50px;
+}
+
 body {
+	background: url(../assets/Stocksy_DJ_Next.jpg);
 	background-color: $backgroundColor;
 	color: $fontColor;
 	font-family: 'Muli', Arial, Helvetica, sans-serif;
 	text-align: center;
+	height: 100%;
 }
 
 h1 {
@@ -30,5 +47,18 @@ a {
 	color: $fontColor;
 }
 
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
 
 
